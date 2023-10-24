@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>eShop.DataStore.HardCoded_Infrastructure_</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.CoreBusiness(Domain)\EShop.CoreBusiness(Domain).csproj" />
+    <ProjectReference Include="..\eShop.UseCases(Application)\eShop.UseCases(Application).csproj" />
+  </ItemGroup>
+
+</Project>

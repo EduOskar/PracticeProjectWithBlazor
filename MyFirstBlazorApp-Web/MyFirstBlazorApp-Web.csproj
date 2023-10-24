@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MyFirstBlazorApp_Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.CoreBusiness(Domain)\EShop.CoreBusiness(Domain).csproj" />
+    <ProjectReference Include="..\eShop.DataStore.HardCoded(Infrastructure)\eShop.DataStore.HardCoded(Infrastructure).csproj" />
+    <ProjectReference Include="..\eShop.UseCases(Application)\eShop.UseCases(Application).csproj" />
+  </ItemGroup>
+
+</Project>

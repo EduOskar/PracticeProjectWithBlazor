@@ -1,0 +1,31 @@
+﻿@page "/dynamic"
+
+<h3>DynamicComponent</h3>
+
+<br />
+<br />
+<button @onclick="HandleBlazorServerClick">Blazor Server</button>
+<button @onclick="HandleBlazorWebAssemblyClick">Blazor WebAssembly</button>
+<br />
+<br />
+<h3>@title</h3>
+<br />
+<div>
+    @content
+</div>
+@code {
+    private string title;
+    private string content;
+
+    private void HandleBlazorServerClick()
+    {
+        title = "Blazor Server";
+        content = "Blazor server generates dynamic contents on the server and sends content to the browser through SignalR channel that is established between the page in the browser and the server";
+    }
+
+    private void HandleBlazorWebAssemblyClick()
+    {
+        title = "Blazor WebAssembly";
+        content = "Blazor WebAssembly runs completly within the web browser and generates dynamic contents direcly at the frontend";
+    }
+}
